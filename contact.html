@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Vukosi Mabasa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Contact Me</h1>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">VM LOGO</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <a href="index.html">Home</a>
+    <div class="container">
+        <div class="page-title">
+            <h1>Contact Me</h1>
+        </div>
 
-    &nbsp;&nbsp;
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
 
-    <a href="about.html">About Me</a>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
 
-    &nbsp;&nbsp;
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="Your message here..."></textarea>
+            </div>
 
-    <a href="contact.html">Contact Us</a>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
 
-    <hr>
-
-    <form>
-
-        <label>Full Name</label>
-        <br><br>
-
-        <input type="text" placeholder="Enter your name">
-
-        <br><br>
-
-        <label>Email</label>
-        <br><br>
-
-        <input type="email" placeholder="Enter your email">
-
-        <br><br>
-
-        <label>Message</label>
-        <br><br>
-
-        <textarea rows="6" cols="40"></textarea>
-
-        <br><br>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
-
 </html>

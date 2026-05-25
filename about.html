@@ -1,90 +1,84 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Vukosi Mabasa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>ABOUT ME</h1>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">VM LOGO</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <a href="index.html">Home</a>
-    &nbsp;&nbsp;
-    <a href="about.html">About Me</a>
-    &nbsp;&nbsp;
-    <a href="contact.html">Contact Us</a>
+    <div class="container">
+        <div class="page-title">
+            <h1>About Me</h1>
+        </div>
 
-    <hr>
+        <h2>Personal Information</h2>
+        <p>My name is Vukosi Mabasa. I am a software developer.</p>
+        <p>I like building websites and systems that help people.</p>
 
-    <h2>Personal Information</h2>
+        <h2>Education</h2>
+        <p>I completed my Diploma in Computer Science at Tshwane University of Technology.</p>
 
-    <p>
-        My name is Vukosi Mabasa. I am a software developer.
-    </p>
+        <h2>Skills</h2>
+        <p>I have experience in the following:</p>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>Java</li>
+            <li>PHP (Laravel)</li>
+            <li>C# (ASP.NET)</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>MySQL / PL/SQL</li>
+            <li>Android Studio</li>
+        </ul>
 
-    <p>
-        I like building websites and systems that help people.
-    </p>
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>Quiz System (Python)</li>
+            <li>Kota Booking System (Laravel)</li>
+            <li>Barber Shop System (Java)</li>
+            <li>Tickets Booking System (Laravel)</li>
+        </ul>
 
-    <hr>
+        <h2>Interests</h2>
+        <ul class="interests-list">
+            <li>Web Development</li>
+            <li>Software Development</li>
+            <li>Cybersecurity</li>
+            <li>Building mobile apps</li>
+        </ul>
 
-    <h2>Education</h2>
+        <h2>Goals</h2>
+        <p>My goal is to become a full-stack developer and build real-world systems.</p>
+    </div>
 
-    <p>
-        I completed my Diploma in Computer Science at Tshwane University of Technology.
-    </p>
-
-    <hr>
-
-    <h2>Skills</h2>
-
-    <p>
-        I have experience in the following:
-    </p>
-
-    <ul>
-        <li>HTML</li>
-        <li>Java</li>
-        <li>PHP (Laravel)</li>
-        <li>C# (ASP.NET)</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>React</li>
-        <li>MySQL / PL/SQL</li>
-        <li>Android Studio</li>
-    </ul>
-
-    <hr>
-
-    <h2>Projects</h2>
-
-    <ul>
-        <li>Quiz System (Python)</li>
-        <li>Kota Booking System (Laravel)</li>
-        <li>Barber Shop System (Java)</li>
-        <li>Tickets Booking System (Laravel)</li>
-    </ul>
-
-    <hr>
-
-    <h2>Interests</h2>
-
-    <ul>
-        <li>Web Development</li>
-        <li>Software Development</li>
-        <li>Cybersecurity</li>
-        <li>Building mobile apps</li>
-    </ul>
-
-    <hr>
-
-    <h2>Goals</h2>
-
-    <p>
-        My goal is to become a full-stack developer and build real-world systems.
-    </p>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
-
 </html>
